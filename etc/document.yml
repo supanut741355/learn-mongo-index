@@ -1,0 +1,30 @@
+[
+  {
+    "_id": ObjectId("64d2f6c3d5e8e4b6b25d2b77"),
+    "name": "Alice",
+    "email": "alice@example.com",
+    "age": 28,
+    "created_at": ISODate("2023-08-01T12:00:00Z")
+  },
+  {
+    "_id": ObjectId("64d2f6c3d5e8e4b6b25d2b78"),
+    "name": "Bob",
+    "email": "bob@example.com",
+    "age": 32,
+    "created_at": ISODate("2023-08-05T15:30:00Z")
+  },
+  {
+    "_id": ObjectId("64d2f6c3d5e8e4b6b25d2b79"),
+    "name": "Charlie",
+    "email": "charlie@example.com",
+    "age": 25,
+    "created_at": ISODate("2023-08-10T09:45:00Z")
+  },
+  {
+    "_id": ObjectId("64d2f6c3d5e8e4b6b25d2b7A"),
+    "name": "Diana",
+    "email": "diana@example.com",
+    "age": 30,
+    "created_at": ISODate("2023-08-15T20:10:00Z")
+  }
+]
