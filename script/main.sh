@@ -73,7 +73,7 @@ db.users.createIndex({
   "age": 1
 })
 
-db.users.createIndex(
+db.users.createIndex({
   "age": 1, 
   "name": 1
 })
@@ -88,3 +88,35 @@ db.users.find({age: {$gte: 10, $lte: 50}, name: "Anonymous"})
 db.users.find({age: {$gte: 10, $lte: 50}, name: "Anonymous"}).sort({score: 1})
 
 
+
+db.users.createIndex(
+  "name": 1,
+  "age": 1,
+  "score": 1
+})
+
+
+db.users.createIndex({
+  "name": 1,
+  "age": 1,
+  "score": 1
+})
+
+
+#result index seartch
+[
+  {Anonymous, 17, 11},
+  {Anonymous, 42, 5},
+]
+
+#result query expect
+[
+  {Anonymous, 42, 5},
+  {Anonymous, 17, 11},
+]
+
+db.users.createIndex({
+  "name": 1,
+  "score": 1,
+  "age": 1
+})
