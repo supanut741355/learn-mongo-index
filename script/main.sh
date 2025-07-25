@@ -37,3 +37,54 @@ db.users.createIndex({
   "name": 1, 
   "age": 1
 })
+
+db.users.insertOne({
+  "_id": ObjectId("64d2f6c3d5e8e4b6b25d2b7B"),
+  "name": "Ethan",
+  "email": "ethan@example.com",
+  "age": 29,
+  "created_at": ISODate("2023-08-20T18:00:00Z")
+})
+
+db.users.insertMany([
+  {
+    "name": "Anonymous",
+    "email": "anonymous1@example.com",
+    "age": 17,
+    "created_at": ISODate("2023-08-20T18:00:00Z")
+  },
+  {
+    "name": "Anonymous",
+    "email": "anonymous2@example.com",
+    "age": 42,
+    "created_at": ISODate("2023-08-20T18:00:00Z")
+  },
+  {
+    "name": "Anonymous",
+    "email": "anonymous3@example.com",
+    "age": 57,
+    "created_at": ISODate("2023-08-20T18:00:00Z")
+  }
+])
+
+db.users.createIndex({
+  "name": 1, 
+  "email": 1, 
+  "age": 1
+})
+
+db.users.createIndex(
+  "age": 1, 
+  "name": 1
+})
+
+db.users.createIndex(
+  "name": 1,
+  "age": 1
+})
+
+db.users.find({age: {$gte: 10, $lte: 50}, name: "Anonymous"})
+
+db.users.find({age: {$gte: 10, $lte: 50}, name: "Anonymous"}).sort({score: 1})
+
+
