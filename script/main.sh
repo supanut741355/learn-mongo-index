@@ -120,3 +120,9 @@ db.users.createIndex({
   "score": 1,
   "age": 1
 })
+
+db.users.find({name:"Ethan"}, {score: 2})
+
+db.users.createIndex({
+  "name": 1
+})
