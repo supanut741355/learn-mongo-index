@@ -154,3 +154,9 @@ db.numx.createIndex({
   "a": 1,
   "b": 1
 })
+
+db.numx.find({a: 4})
+db.numx.find({a: 10, b: 11})
+db.numx.find({a: 13, b: 14, c: 15})
+
+{b: 11,c:  12}
