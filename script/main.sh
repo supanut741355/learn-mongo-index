@@ -121,8 +121,36 @@ db.users.createIndex({
   "age": 1
 })
 
-db.users.find({name:"Ethan"}, {score: 2})
+db.users.find({name:"Ethan", score: 2})
 
 db.users.createIndex({
-  "name": 1
+  "name": 1,
+  "score": 1
+})
+
+{name}
+
+{score, }
+
+{name, score}
+
+
+
+
+db.numx.insertMany([
+  { a: 1, b: 2, c: 3 },
+  { a: 4, b: 5, c: 6 },
+  { a: 7, b: 8, c: 9 },
+  { a: 10, b: 11, c: 12 },
+  { a: 13, b: 14, c: 15 }
+]);
+
+
+db.numx.createIndex({
+  "a": 1
+})
+
+db.numx.createIndex({
+  "a": 1,
+  "b": 1
 })

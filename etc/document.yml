@@ -25,7 +25,56 @@
     "name": "Diana",
     "email": "diana@example.com",
     "age": 30,
-    "created_at": ISODate("2023-08-15T20:10:00Z")
+    "created_at": ISODate("2023-08-15T20:10:00Z"),
+    score: 2
+  },
+  {
+    "_id": {
+      "$oid": "64d2f6c3d5e8e4b6b25d2b7b"
+    },
+    "name": "Ethan",
+    "email": "ethan@example.com",
+    "age": 29,
+    "created_at": {
+      "$date": "2023-08-20T18:00:00.000Z"
+    },
+    "score": 5
+  },
+  {
+    "_id": {
+      "$oid": "68833df8c199dc37070cbd6f"
+    },
+    "name": "Anonymous",
+    "email": "anonymous1@example.com",
+    "age": 17,
+    "created_at": {
+      "$date": "2023-08-20T18:00:00.000Z"
+    },
+    "score": 11
+  },
+  {
+    "_id": {
+      "$oid": "68833df8c199dc37070cbd70"
+    },
+    "name": "Anonymous",
+    "email": "anonymous2@example.com",
+    "age": 42,
+    "created_at": {
+      "$date": "2023-08-20T18:00:00.000Z"
+    },
+    "score": 5
+  },
+  {
+    "_id": {
+      "$oid": "68833df8c199dc37070cbd71"
+    },
+    "name": "Anonymous",
+    "email": "anonymous3@example.com",
+    "age": 57,
+    "created_at": {
+      "$date": "2023-08-20T18:00:00.000Z"
+    },
+    "score": 2
   }
 ]
 
